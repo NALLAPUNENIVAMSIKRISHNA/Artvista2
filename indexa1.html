@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo da Vinci Artist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+</head>
+<body>
+
+    <div class="hero">
+        <div class="carousel">
+            <p style="color:rgb(225, 225, 231);">Works of Leonardo da vinci</p>
+            <ul>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">Mona Lisa</h3>
+                        <p class="slide-description white">The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci the most parodied work of art in the world".</p>
+                        <div class="image-wrapper">
+                            <img src="images/img11.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom In</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading whi of aast Supper">The last supper</h3>
+                        <p class="slide-description white">The Last Supper is a mural painting by the Italian High Renaissance artist Leonardo da Vinci, dated to c. 1495–1498.</p>
+                        <div class="image-wrapper">
+                            <img src="images/img12.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom in</button>
+                                <button class="zoom-out">Zoom out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">Vitruvian Man</h3>
+                        <p class="slide-description white">The Vitruvian Man depicts a nude man facing forward and surrounded by a square, while superimposed on a circle. The man is portrayed in different stances</p>
+                        <div class="image-wrapper">
+                            <img src="images/img43.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom in</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">Annunciation</h3>
+                        <p class="slide-description white">The Annunciation, also referred to as the Annunciation to the Blessed Virgin Mary, the Annunciation of Our Lady, or the Annunciation of the Lord, is the announcement by the archangel Gabriel to Mary</p>
+                        <div class="image-wrapper">
+                            <img src="images/img44.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom in </button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">Virgin of the Rocks</h3>
+                        <p class="slide-description white"> The Virgin with the Infant Saint John the Baptist Adoring the Christ Child Accompanied by an Angel or La Vierge, l'Enfant Jésus, saint Jean Baptiste et un ange, also called The Madonna of the Rocks</p>
+                        <div class="image-wrapper">
+                            <img src="images/img45.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom In</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2>Suggestions / Reactions!</h2>
+        <form action="#">
+            <p>Name</p>
+            <input type="text">
+            <p>Email</p>
+            <input type="email">
+            <p>Message / Feedback</p>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button>Send</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity```
+"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="jquery.flipster.min.js"></script>
+
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.3,
+        });
+
+        // Zoom functionality
+        $('.zoom-in').click(function() {
+            $(this).parent().siblings('img').css('transform', 'scale(1.2)');
+        });
+
+        $('.zoom-out').click(function() {
+            $(this).parent().siblings('img').css('transform', 'scale(1)');
+        });
+    </script>
+    
+</body>
+</html>

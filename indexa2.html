@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Picasso Artist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+</head>
+<body>
+
+    <div class="hero">
+        <div class="carousel">
+            <p style="color:rgb(225, 225, 231);">Works of Pablo Picasso</p>
+            <ul>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">Guernica</h3>
+                        <p class="slide-description white">Guernica, a large black-and-white oil painting executed by Spanish artist Pablo Picasso in 1937 following the German bombing of Guernica, a city in Spain's Basque region.</p>
+                        <div class="image-wrapper">
+                            <img src="images/img51.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom In</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading whi of aast Supper">Les Demoiselles d'Avignon</h3>
+                        <p class="slide-description white">Les Demoiselles d'Avignon marks a radical break from traditional composition and perspective in painting. It depicts five naked women composed of flat</p>
+                        <div class="image-wrapper">
+                            <img src="images/img52.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom in</button>
+                                <button class="zoom-out">Zoom out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">Weeping Woman</h3>
+                        <p class="slide-description white">The Weeping Woman is a series of oil on canvas paintings by Pablo Picasso, the last of which was created in late 1937. The paintings depict Dora Maar, Picasso's mistress and muse.</p>
+                        <div class="image-wrapper">
+                            <img src="images/img53.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom in</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">Les Saltimbanques</h3>
+                        <p class="slide-description white">The painting depicts a family of acrobats in which the child has suffered a fatal injury while performing, it shows his mother comforting him while he dies and his father looks on in despair. Doré said of the work: “…he is dying.</p>
+                        <div class="image-wrapper">
+                            <img src="images/img54.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom in </button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">Virgin of the Rocks</h3>
+                        <p class="slide-description white"> The Virgin with the Infant Saint John the Baptist Adoring the Christ Child Accompanied by an Angel or La Vierge, l'Enfant Jésus, saint Jean Baptiste et un ange, also called The Madonna of the Rocks</p>
+                        <div class="image-wrapper">
+                            <img src="images/img45.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom In</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2>Suggestions / Reactions!</h2>
+        <form action="#">
+            <p>Name</p>
+            <input type="text">
+            <p>Email</p>
+            <input type="email">
+            <p>Message / Feedback</p>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button>Send</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity```
+"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="jquery.flipster.min.js"></script>
+
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.3,
+        });
+
+        // Zoom functionality
+        $('.zoom-in').click(function() {
+            $(this).parent().siblings('img').css('transform', 'scale(1.2)');
+        });
+
+        $('.zoom-out').click(function() {
+            $(this).parent().siblings('img').css('transform', 'scale(1)');
+        });
+    </script>
+    
+</body>
+</html>

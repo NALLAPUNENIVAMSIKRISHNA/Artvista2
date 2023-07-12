@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realism - Genre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+</head>
+<body>
+
+    <div class="hero">
+        <div class="carousel">
+            <ul>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">The Horse Fair</h3>
+                        <p class="slide-description white">The Horse Fair is an oil-on-canvas painting by French artist Rosa Bonheur, begun in 1852 and first exhibited at the Paris Salon in 1853. The artist added some finishing touches in 1855.</p>
+                        <div class="image-wrapper">
+                            <img src="images/img31.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom In</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading whi of aast Supper">The Railway</h3>
+                        <p class="slide-description white">The Railway, widely known as Gare Saint-Lazare, is an 1873 painting by Édouard Manet. It is the last painting by Manet of his favourite model, the fellow painter Victorine Meurent.</p>
+                        <div class="image-wrapper">
+                            <img src="images/img22.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom in</button>
+                                <button class="zoom-out">Zoom out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">The Meeting</h3>
+                        <p class="slide-description white">The Meeting or "Bonjour, Monsieur Courbet" is an oil-on-canvas painting by Gustave Courbet, made in 1854. It depicts the artist on his way to Montpellier meeting his patron Alfred Bruyas, his servant Calas and his dog.</p>
+                        <div class="image-wrapper">
+                            <img src="images/img33.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom in</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">The Gleaners</h3>
+                        <p class="slide-description white">It depicts three peasant women gleaning a field of stray stalks of wheat after the harvest. The painting is famous for featuring in a sympathetic way what were then the lowest ranks of rural society</p>
+                        <div class="image-wrapper">
+                            <img src="images/img34.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom in </button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">Stone Breakers</h3>
+                        <p class="slide-description white">The Stone Breakers, also known as Stonebreakers, was an 1849 oil-on-canvas painting by the French painter Gustave Courbet. The painting was an example of realism and it portrayed an old man and a young man, both breaking rocks.</p>
+                        <div class="image-wrapper">
+                            <img src="images/img35.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom In</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2>Suggestions / Reactions!</h2>
+        <form action="#">
+            <p>Name</p>
+            <input type="text">
+            <p>Email</p>
+            <input type="email">
+            <p>Message / Feedback</p>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button>Send</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity```
+"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="jquery.flipster.min.js"></script>
+
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.3,
+        });
+
+        // Zoom functionality
+        $('.zoom-in').click(function() {
+            $(this).parent().siblings('img').css('transform', 'scale(1.2)');
+        });
+
+        $('.zoom-out').click(function() {
+            $(this).parent().siblings('img').css('transform', 'scale(1)');
+        });
+    </script>
+    
+</body>
+</html>

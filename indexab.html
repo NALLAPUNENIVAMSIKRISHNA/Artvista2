@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renaissance - Genre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+</head>
+<body>
+
+    <div class="hero">
+        <div class="carousel">
+            <ul>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">Mona Lisa</h3>
+                        <p class="slide-description white">The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci the most parodied work of art in the world".</p>
+                        <div class="image-wrapper">
+                            <img src="images/img11.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom In</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading whi of aast Supper">The last supper</h3>
+                        <p class="slide-description white">The Last Supper is a mural painting by the Italian High Renaissance artist Leonardo da Vinci, dated to c. 1495–1498.</p>
+                        <div class="image-wrapper">
+                            <img src="images/img12.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom in</button>
+                                <button class="zoom-out">Zoom out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">School of athens</h3>
+                        <p class="slide-description white">The School of Athens is a fresco by the Italian Renaissance artist Raphael. The fresco was painted between 1509 and 1511 as a part of Raphael's 
+                            commission to decorate the rooms now known as the Stanze di Raffaello, in the Apostolic Palace in the Vatican</p>
+                        <div class="image-wrapper">
+                            <img src="images/img13.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">Creation of Adam</h3>
+                        <p class="slide-description white">The Creation of Adam is a fresco painting by Italian artist Michelangelo, which forms part of the Sistine Chapel's ceiling, painted c. 1508–1512.
+                             It illustrates the Biblical creation narrative from the Book of Genesis in which God gives life to Adam, the first man.</p>
+                        <div class="image-wrapper">
+                            <img src="images/img14.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">Birth of venus</h3>
+                        <p class="slide-description white"> Birth of Venus depicts the moment when, having emerged from the sea in a shell, Venus lands at Paphos in Cyprus.</p>
+                        <div class="image-wrapper">
+                            <img src="images/img15.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom In</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2>Suggestions / Reactions!</h2>
+        <form action="#">
+            <p>Name</p>
+            <input type="text">
+            <p>Email</p>
+            <input type="email">
+            <p>Message / Feedback</p>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button>Send</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity```
+"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="jquery.flipster.min.js"></script>
+
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.3,
+        });
+
+        // Zoom functionality
+        $('.zoom-in').click(function() {
+            $(this).parent().siblings('img').css('transform', 'scale(1.2)');
+        });
+
+        $('.zoom-out').click(function() {
+            $(this).parent().siblings('img').css('transform', 'scale(1)');
+        });
+    </script>
+    
+</body>
+</html>

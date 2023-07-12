@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent van Gogh Artist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+</head>
+<body>
+
+    <div class="hero">
+        <div class="carousel">
+            <p style="color:rgb(225, 225, 231);">Works of Vincent van Gogh</p>
+            <ul>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">The Starry Night</h3>
+                        <p class="slide-description white">he Starry Night (Dutch: De sterrennacht) is an oil-on-canvas painting by the Dutch Post-Impressionist painter Vincent van Gogh. Painted in June 1889</p>
+                        <div class="image-wrapper">
+                            <img src="images/img61.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom In</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading whi of aast Supper">Sunflowers</h3>
+                        <p class="slide-description white">Vincent started painting flower still lifes to experiment with colour. Flower still lifes also sold well, which was another reason to paint them.</p>
+                        <div class="image-wrapper">
+                            <img src="images/img62.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom in</button>
+                                <button class="zoom-out">Zoom out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">Irises</h3>
+                        <p class="slide-description white">Irises is one of several paintings of irises by the Dutch artist Vincent van Gogh, and one of a series of paintings he made at the Saint Paul-de-Mausole asylum in Saint-Rémy-de-Provence, France, in the last year before his death in 1890.</p>
+                        <div class="image-wrapper">
+                            <img src="images/img63.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom in</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">The Bedroom</h3>
+                        <p class="slide-description white">While he was in Arles, Van Gogh made this painting of his bedroom in the Yellow House. He prepared the room himself with simple furniture and with his own </p>
+                        <div class="image-wrapper">
+                            <img src="images/img64.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom in </button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide-content">
+                        <h3 class="slide-heading white">Café Terrace at Night</h3>
+                        <p class="slide-description white"> Café Terrace at Night is an 1888 oil painting by the Dutch artist Vincent van Gogh. It is also known as The Cafe Terrace on the Place du Forum, and, when first exhibited in 1891, was entitled Coffeehouse, in the evening.</p>
+                        <div class="image-wrapper">
+                            <img src="images/img65.png" alt="">
+                            <div class="zoom-buttons">
+                                <button class="zoom-in">Zoom In</button>
+                                <button class="zoom-out">Zoom Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2>Suggestions / Reactions!</h2>
+        <form action="#">
+            <p>Name</p>
+            <input type="text">
+            <p>Email</p>
+            <input type="email">
+            <p>Message / Feedback</p>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button>Send</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity```
+"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="jquery.flipster.min.js"></script>
+
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.3,
+        });
+
+        // Zoom functionality
+        $('.zoom-in').click(function() {
+            $(this).parent().siblings('img').css('transform', 'scale(1.2)');
+        });
+
+        $('.zoom-out').click(function() {
+            $(this).parent().siblings('img').css('transform', 'scale(1)');
+        });
+    </script>
+    
+</body>
+</html>
